@@ -30,3 +30,4 @@ print(world_table_titles)
 # enter titles into pandas data frame
 df = pd.DataFrame(columns=world_table_titles)
 df
+# imported pandas
