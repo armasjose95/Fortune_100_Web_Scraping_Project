@@ -31,3 +31,4 @@ print(world_table_titles)
 df = pd.DataFrame(columns=world_table_titles)
 df
 # imported pandas
+# headers are now printed
