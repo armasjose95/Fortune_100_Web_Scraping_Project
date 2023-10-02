@@ -32,3 +32,8 @@ df = pd.DataFrame(columns=world_table_titles)
 df
 # imported pandas
 # headers are now printed
+
+
+# start pulling in data for each column
+# they come in with their headers, so will need to get rid of them
+table.find_all('tr')
