@@ -42,7 +42,7 @@ column_data = table.find_all('tr')
 # as it gets looped through I'm finding all and looking for the td tags(individual data(row data))
 # then I'm taking each piece of data & getting out the text & stripping it to clean it
 # now in a list for each individual row
-for row in column_data:
+for row in column_data[1:]:
     row_data = row.find_all('td')
     individual_row_data = [data.text.strip() for data in row_data]
 
@@ -53,3 +53,6 @@ for row in column_data:
 # and then I'm going to put the info in the next position by appending it to our empty data frame
 length = len(df)
 df.loc[length] = individual_row_data
+# df
+# export this into a CSV
+df.to_csv(r'/Users/josearmas/Desktop/Fortune_100_Web_Scraping_Project\Companies.csv', index=False)
