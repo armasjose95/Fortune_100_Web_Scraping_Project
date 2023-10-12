@@ -53,6 +53,6 @@ for row in column_data[1:]:
 # and then I'm going to put the info in the next position by appending it to our empty data frame
 length = len(df)
 df.loc[length] = individual_row_data
-# df
+df
 # export this into a CSV
 df.to_csv(r'/Users/josearmas/Desktop/Fortune_100_Web_Scraping_Project\Companies.csv', index=False)
