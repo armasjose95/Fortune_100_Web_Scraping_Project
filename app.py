@@ -56,3 +56,7 @@ df.loc[length] = individual_row_data
 df
 # export this into a CSV
 df.to_csv(r'/Users/josearmas/Desktop/Fortune_100_Web_Scraping_Project\Companies.csv', index=False)
+
+
+# test
+# test
